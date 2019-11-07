@@ -1,14 +1,52 @@
+<!-- <!DOCTYPE HTML>
+<html>
+<body>
+	<div id="result"></div>
+	<script>
+	 if(typeof(Storage)!=="undefined")
+	 {
+		localStorage.setItem("lastname","Raju");
+		document.getElementById("result").innerHTML=localStorage.getItem("lastname");
+	 }
+	else
+	{
+	document.getElementById("result").innerHTML="Browser does n't support web storage";
+	}
+	</script>
+</body>
+</html>-->
 <!DOCTYPE HTML>
 <html>
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
 </head>
 <body>
-	<h1 class="bg-primary text-white" align="center">This is my new web page</h1><br>
-<button  class="bg-primary text-white btn-block" onclick="clickCounter()">
-	<span class="spinner-border spinner-border-sm"></span>
-Click Here</button>
-<div id="result"></div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 p-3 bg-primary text-white" align="center"><h1>WELCOME TO WEBPAGE</h1></div>
+	</div>
+	<div class="row ">
+		<div class="col-4 btn  btn-dark"> City Guide</div>
+		<div class="col-4 btn  btn-success"> Tourist</div>
+		<div class="col-4 btn  btn-danger"> Contact</div>
+	</div>	
+	<div class="row mt-2">
+	<h3 class="card-title">About Davanagere</h3>
+	<p class="card-body bg-warning">
+		Davanagere - The main district of Karnataka in the state of Karnataka. Davanagere is popular for the textile industry. Davangere Cotton Mills is a popular name here. Now the town is growing at a rapid pace. The earlier name of Davanagere was "Davanagari" which gradually became Davangere.
+
+Davanagere is a major trading center of central Karnataka where cotton, maize, chickpea, sunflower, corn, rice / rice, and other important commercial crops are brought from other districts of Karnataka.
+
+Davangere has recently grown into one of the premier educational centers in the state, and it has colleges in the areas of painting, textile design, engineering (abhiyasthastra), medical, art, commerce and other academic disciplines.
+
+Davanagere lies in the heart of Karnataka at 14 ° 28 ರೇಖ longitude and 75 ° 59 ಅಕ್ಷ latitude and is 602.5 m above sea level. The butter waffle at Davangere is very tasty and unique 
+	</p>
+	</div>
+		<button  class="bg-primary text-white btn-block" onclick="clickCounter()">
+			<span class="spinner-border spinner-border-sm"></span>
+		Click Here</button>
+		<div id="result"></div>
+</div>
 <script>
 function clickCounter()
 {
