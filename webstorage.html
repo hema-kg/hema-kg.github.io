@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+</head>
+<body>
+<button  class="bg-primary text-white btn-block" onclick="clickCounter()">
+	<span class="spinner-border spinner-border-sm"></span>
+Click Here</button>
+<div id="result"></div>
+<script>
+function clickCounter()
+{
+	if(typeof(Storage)!=="undefined")
+	{
+		if(sessionStorage.clickCount)
+		{
+			sessionStorage.clickCount = Number(sessionStorage.clickCount) + 1;
+		}
+		else
+		{
+			sessionStorage.clickCount = 1;
+		}
+		document.getElementById("result").innerHTML="You have clicked the buttons " + sessionStorage.clickCount +" times";
+	 }
+	 else
+		document.getElementById("result").innerHTML="Browser does not support the session storage";
+}
+</script>
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</html>
